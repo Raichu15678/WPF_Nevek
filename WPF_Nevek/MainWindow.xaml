@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WPF_Nevek"
         mc:Ignorable="d"
         Title="Nevekszortirozzása" Height="450" Width="400">
-    <Grid>
+    <Grid Background="#FFC8C8C8">
         
         <Label Content="Keresztnevek, elválasztva"
                Width="auto"
@@ -43,9 +43,9 @@
                 Content="Szavakra bontás"
                 Width="140"
                 Height="30"
-                VerticalAlignment="Bottom"
+                VerticalAlignment="Top"
                 HorizontalAlignment="Left"
-                Margin="30 0 0 10"
+                Margin="20 390 0 0"
                 FontSize="16"
                 Click="btn_nevekkiir_Click"
                 />
@@ -53,9 +53,9 @@
                 Content="Rendez"
                 Width="70"
                 Height="30"
-                VerticalAlignment="Bottom"
+                VerticalAlignment="Top"
                 HorizontalAlignment="Right"
-                Margin="0 0 70 10"
+                Margin="0 390 70 0"
                 FontSize="16"
                 Click="btn_rendez_Click"/>
     </Grid>
