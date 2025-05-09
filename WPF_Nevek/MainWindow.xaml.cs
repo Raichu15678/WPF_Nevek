@@ -62,11 +62,11 @@ namespace WPF_Nevek
                     Nevek.Add(sorrend);
                     lb_nevekrendezve.Items.Add(sorrend);
                 }
-                MessageBox.Show("A név lista sorba lett rendezve :) ", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("A név lista sorba lett rendezve!", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             else
             {
-                MessageBox.Show("Kérem adjon meg egy nevet", "Hiba", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Adjon meg egy nevet", "Hiba", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
