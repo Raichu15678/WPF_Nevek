@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Nevek"
         mc:Ignorable="d"
-        Title="Nevekszortirozzása" Height="450" Width="400">
+        Title="Nevekszortirozzása" Height="500" Width="400">
     <Grid Background="#FFC8C8C8">
         
         <Label Content="Keresztnevek, elválasztva"
