@@ -34,8 +34,8 @@ namespace WPF_Nevek
                 lb_nevekkiir.Items.Clear();
                 Nevek.Clear();
                 string Nevszovegdoboz = tbx_nevekbeir.Text;
-                string[] kecske = Nevszovegdoboz.Split(',');
-                foreach (string s in kecske)
+                string[] sliced = Nevszovegdoboz.Split(',');
+                foreach (string s in sliced)
                 {
                     Nevek.Add(s);
                     lb_nevekkiir.Items.Add(s);
@@ -44,7 +44,7 @@ namespace WPF_Nevek
             }
             else
             {
-                MessageBox.Show("Kérem adjon meg egy nevet", "Hiba", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Adjon meg egy nevet", "Hiba", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -55,12 +55,12 @@ namespace WPF_Nevek
                 lb_nevekrendezve.Items.Clear();
                 Nevek.Clear();
                 string Nevszovegdoboz = tbx_nevekbeir.Text;
-                string[] kecske = Nevszovegdoboz.Split(',');
-                Array.Sort(kecske);
-                foreach (string s in kecske)
+                string[] sliced = Nevszovegdoboz.Split(',');
+                Array.Sort(sliced);
+                foreach (string sorrend in sliced)
                 {
-                    Nevek.Add(s);
-                    lb_nevekrendezve.Items.Add(s);
+                    Nevek.Add(sorrend);
+                    lb_nevekrendezve.Items.Add(sorrend);
                 }
                 MessageBox.Show("A név lista sorba lett rendezve :) ", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
             }
